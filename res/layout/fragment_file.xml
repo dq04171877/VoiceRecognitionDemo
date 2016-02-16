@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5EE"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/file_title"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+         android:layout_alignParentLeft="true"
+        android:background="#FFA500"
+        android:hint="@string/file_title_label"
+        android:textColor="#FFE4E1" />
+
+    <Button
+        android:id="@+id/file_share"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/file_save"
+        android:layout_alignBottom="@+id/file_save"
+        android:layout_alignRight="@+id/file_recognition"
+        android:layout_marginRight="58dp"
+        android:text="@string/share"
+        android:background="@drawable/buttonshare" />
+
+    <EditText
+        android:id="@+id/file_date"
+        style="?android:linksClickable"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/file_title"
+        android:background="#FFE4E1"
+        android:ems="10"
+        android:textColor="#FFA500" />
+
+    <EditText
+        android:id="@+id/file_recognition"
+        android:layout_width="279dp"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/file_share"
+        android:background="#FAFAD2"
+        android:gravity="top"
+        android:hint="@string/no"
+        android:textIsSelectable="true" 
+        android:textColor="#EE4000"/>
+
+    <Button
+        android:id="@+id/file_save"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_date"
+        android:layout_marginRight="65dp"
+        android:layout_toLeftOf="@+id/file_share"
+        android:background="@drawable/buttonsave"
+        android:text="@string/send" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="oval" >
+            <corners android:radius="20dp" />
+
+            <solid android:color="#4169E1" />
+
+            <size
+                android:height="82dp"
+                android:width="82dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+            <item android:state_pressed="true">
+                <shape android:shape="oval" >
+                    <corners android:radius="20dp" />
+
+                    <solid android:color="#8EE5EE" />
+
+                    <size
+                        android:height="78dp"
+                        android:width="78dp" />
+                </shape>
+            </item>
+            <item android:state_focused="true">
+                <shape android:shape="oval" >
+                    <corners android:radius="20dp" />
+
+                    <solid android:color="#f3876f" />
+
+                    <size
+                        android:height="78dp"
+                        android:width="78dp" />
+                </shape>
+
+                <item>
+                    <shape android:shape="oval" >
+                        <corners android:radius="20dp" />
+
+                        <solid android:color="#f08080" />
+
+                        <size
+                            android:height="78dp"
+                            android:width="78dp" />
+                    </shape>
+                </item>
+            </item>
+        </selector>
+    </item>
+    <item android:drawable="@drawable/mikegray">
+        <shape android:shape="oval" >
+        </shape>
+    </item>
+
+</layer-list>

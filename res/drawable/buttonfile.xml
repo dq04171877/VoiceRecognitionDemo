@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="#FFFF00" />
+
+            <size
+                android:height="100dp"
+                android:width="100dp" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/wenjianjia"
+        android:bottom="30dp"
+        android:left="30dp"
+        android:right="30dp"
+        android:top="30dp">
+        <shape android:shape="oval" >
+             <solid android:color="#f08080" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7D9EC0"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/textDanmu"
+        android:layout_width="192dp"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#F5FFFA"
+        android:ems="10"
+        android:textColor="#191970"
+        android:hint="@string/textDanmu" >
+
+        <requestFocus />
+    </EditText>
+    <Button
+        android:id="@+id/buttonDanmuSend"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonDanmuPort"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/send"
+        android:textColor="#191970"
+        android:background="@drawable/buttondanmufa" />
+
+    <EditText
+        android:id="@+id/textDanmuPort"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/textDanmu"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/buttonDanmuPort"
+        android:background="#F5FFFA"
+        android:ems="10"
+        android:hint="@string/textDanmuPort"
+        android:textColor="#191970" />
+
+    <Button
+        android:id="@+id/buttonDanmuClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDanmuPort"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttondanmuport"
+        android:text="@string/clear"
+        android:textColor="#F5FFFA" />
+
+    <Button
+        android:id="@+id/buttonDanmuPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textDanmuPort"
+        android:layout_alignBottom="@+id/textDanmuPort"
+        android:layout_alignRight="@+id/buttonDanmuSend"
+        android:background="@drawable/buttondanmuport"
+        android:text="@string/yes"
+        android:textColor="#F5FFFA" />
+
+</RelativeLayout>
